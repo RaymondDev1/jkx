@@ -61,7 +61,7 @@ def vyvod_info_cl(uslugi_func):
                         txt43[j].config(
                             text='Инфо. о квартире: ' + str(t[0]) + ' - номер квартиры, ' + str(t[1]) + ' - месяц, '
                                  + str(t[2]) + ' - кв. плата, ' + str(t[3]) + ' - электричество, ' + str(t[4]) +
-                                 ' - вода, ' + str(t[5]) + ' - газ')  # justify=LEFT, anchor='nw' - не работает
+                                 ' - вода, ' + str(t[5]) + ' - газ')
                         j += 1
                 for o in range(j, len(uslugi_func)):
                     txt43[o].config(text='')
@@ -318,7 +318,6 @@ def enter1(uslugi_func):
                 btn12 = Button(wind1)
                 btn12.config(text="Да", font=("Arial", 12), command=wenter1_yes)
                 btn12.pack(pady=10)
-                # если "Да", вывести текст "Данные перезаписаны", если "Нет" - "Данные в исходном положении"
                 btn13 = Button(wind1)
                 btn13.config(text="Нет", font=("Arial", 12), command=wenter1_no)
                 btn13.pack(pady=10)
